@@ -1,0 +1,7 @@
+{
+    "Auth.default": true,
+    "AuthDefault": true,
+    "UserManager": true,
+    "User": true,
+    "Roles": true
+}

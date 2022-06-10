@@ -1,0 +1,13 @@
+{
+    "name": "AuthDefault",
+    "alias": "authdefault",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AuthDefault\\Providers\\AuthDefaultServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

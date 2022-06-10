@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~@fortawesome/fontawesome-free/css/fontawesome';
+@import '~@fortawesome/fontawesome-free/css/regular';
+@import '~@fortawesome/fontawesome-free/css/solid';
+@import '~@fortawesome/fontawesome-free/css/brands';
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    @apply bg-slate-200
+}
+
+
+@layer components {
+    .form-input {
+        @apply p-2 border-slate-200 border font-light text-slate-700 mb-4
+    }
+
+    .form-label {
+        @apply font-semibold text-slate-700
+    }
+
+    .cis-form-label {
+        @apply font-normal text-slate-500
+    }
+
+    .cis-form-input {
+        @apply p-2 py-1 border border-slate-300 font-light text-slate-700 rounded-md
+    }
+
+    .cis-form-button {
+        @apply bg-slate-500 text-slate-50 p-2 py-1 rounded-md hover:bg-slate-600
+    }
+
+    .form-button {
+        @apply bg-slate-500 text-slate-50 p-2 hover:bg-slate-600
+    }
+
+    .form-input-invalid {
+        @apply bg-red-50 border-red-200
+    }
+
+    .cis-form-group {
+        @apply flex items-center mb-5
+    }
+
+    .cis-form-group > input {
+        @apply w-full
+    }
+
+    .cis-form-group > label {
+        @apply w-40 pr-4
+    }
+
+    .cis-table {
+        @apply rounded-lg shadow-md bg-white min-w-full
+    }
+
+    .cis-table > thead {
+        @apply text-slate-500 uppercase text-left font-light
+    }
+
+    .cis-table > thead > tr > th {
+        @apply p-3 bg-slate-100 font-light
+    }
+
+    .cis-table > thead > tr > th:first-child {
+        @apply rounded-tl-lg
+    }
+
+    .cis-table > thead > tr > th:last-child {
+        @apply rounded-tr-lg
+    }
+
+    .cis-table > tbody > tr > td {
+        @apply p-3 border-b border-slate-200 text-slate-700 font-light
+    }
+
+    .cis-table > tbody > tr > td > a {
+        @apply underline-offset-2 underline decoration-dotted
+    }
+
+    .cis-table .options {
+        @apply flex space-x-2
+    }
+
+    .cis-table .options > a {
+        @apply underline-offset-2 underline decoration-dotted
+    }
+
+    .cis-table .options > form > a {
+        @apply underline-offset-2 underline decoration-dotted
+    }
+
+    .cis-headline {
+        @apply border-b border-slate-400 pb-2 m-10 font-light text-3xl text-slate-600
+    }
+
+    .cis-container {
+        @apply m-10
+    }
+
+    .cis-box {
+        @apply rounded-lg shadow-md bg-white min-w-full p-4 text-slate-700 font-light
+    }
+}
